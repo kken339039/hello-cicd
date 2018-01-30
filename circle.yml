@@ -1,5 +1,4 @@
 machine: # 虛擬機的環境
   node:
     version: 7.10.0 
-  test:
-    - npm build
+    java: 1.8.0
