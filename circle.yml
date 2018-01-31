@@ -9,7 +9,7 @@ machine: # 虛擬機的環境
     version: openjdk8
   node:
     version: 7.10.0
-run:
-  name: Build Fornt End
-  command: 
-    - npm run build
+- run:
+    name: Build Fornt End
+    command: 
+      - npm run build
