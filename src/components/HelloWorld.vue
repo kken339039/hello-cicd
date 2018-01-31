@@ -39,11 +39,12 @@
 </template>
 
 <script>
+  import xxx from "23456789"
   export default {
     name: 'HelloWorld',
     data() {
       return {
-        // msg: 'Welcome to Your Vue.js App'
+        msg: 'Welcome to Your Vue.js App'
       }
     }
   }
