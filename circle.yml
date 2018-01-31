@@ -1,5 +1,24 @@
-machine: # 虛擬機的環境
+machine:
+  java:
+    version: openjdk8
   node:
-    version: 7.10.0 #把剛剛得到的node version填到這裡
-  test:
-    - npm test  #每一個deploy到github上的commit都會執行npm test
+    version: 7.10.0
+  npm: 
+    version: 5.4.1
+
+dependencies:
+  pre:
+    - curl -L -o google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - sudo dpkg -i google-chrome.deb
+    - sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
+    - rm google-chrome.deb
+  override:
+    - npm install
+    - npm run build
+
+test:
+  override:
+    - "true"
+  
+
+
