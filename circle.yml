@@ -9,8 +9,3 @@ machine: # 虛擬機的環境
     version: openjdk8
   node:
     version: 7.10.0 
-workflows:
-  version: 1
-  build:
-    jobs:
-      - npm run build
