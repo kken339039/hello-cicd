@@ -1,3 +1,11 @@
+machine: # 虛擬機的環境
+  java:
+    version: openjdk8
+  node:
+    version: 7.10.0
+  npm: 
+    version: 5.4.1
+
 dependencies:
   pre:
     - curl -L -o google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -7,12 +15,4 @@ dependencies:
   override:
     - npm install
     - npm run build
-
-machine: # 虛擬機的環境
-  java:
-    version: openjdk8
-  node:
-    version: 7.10.0
-  npm: 
-    version: 5.4.1
 

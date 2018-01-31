@@ -39,7 +39,6 @@
 </template>
 
 <script>
-  import xxx from "23456789"
   export default {
     name: 'HelloWorld',
     data() {
