@@ -1,6 +1,8 @@
 machine: # 虛擬機的環境
   node:
     version: 7.10.0 
+  java:
+    version: openjdk8
 workflows:
   version: 1
   build:
