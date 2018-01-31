@@ -9,6 +9,8 @@ machine: # 虛擬機的環境
     version: openjdk8
   node:
     version: 7.10.0
+  npm: 
+    version: 5.4.1
 jobs:
   build:
     # docker:
