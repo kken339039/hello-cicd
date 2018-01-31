@@ -39,7 +39,6 @@
 </template>
 
 <script>
-  import xxx from "error-test-import"
   export default {
     name: 'HelloWorld',
     data() {
