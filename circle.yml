@@ -15,6 +15,10 @@ dependencies:
   override:
     - npm install
     - npm run build
+
+test:
+  override:
+    - echo "test"
   
 
 
